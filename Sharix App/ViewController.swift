@@ -16,9 +16,29 @@ class LoinPage: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        print("old login info")
+        reteriveLoginInfo()
+
     }
 
     @IBAction func LoginAction(_ sender: Any) {
+        UserDefaults.standard.set(EmailTextField.text, forKey: "Email")
+        UserDefaults.standard.set(PasswordTextField.text, forKey: "Password")
+        
+        print("new login info")
+        reteriveLoginInfo()
+
+    }
+    
+    func reteriveLoginInfo(){
+        let email = UserDefaults.standard.string(forKey: "Email")
+        let password = UserDefaults.standard.string(forKey: "Password")
+        
+        if let email = email, let password = password {
+            print("Your email is \(email) and password is \(password)")
+        } else {
+            print("No saved login info found")
+        }
     }
     
 }
@@ -127,8 +147,11 @@ class CollectionPage: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let size = (collectionView.frame.size.width-10)/2
+        let width = collectionView.frame.size.width
+        let safeWidth = width > 10 ? width : 320 // or any default fallback
+        let size = (safeWidth - 10) / 2
         return CGSize(width: size, height: size)
+
     }
 }
 
