@@ -431,7 +431,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userDetailsTableCell" rowHeight="140" id="PB1-fR-Pan" customClass="userDetailsTableCell" customModule="Sharix_App" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userDetailsTableCell" rowHeight="140" id="PB1-fR-Pan" customClass="userDetailsTableCell" customModule="Sharix_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="377" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PB1-fR-Pan" id="4pT-eh-by8">
@@ -439,83 +439,96 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nz-sF-12b">
-                                                    <rect key="frame" x="20" y="5" width="45" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20" y="5" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMj-bi-SyX" userLabel="nameField">
-                                                    <rect key="frame" x="96" y="5" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QG-9k-d1g" userLabel="nameField">
+                                                    <rect key="frame" x="78" y="5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4S-t8-Ii0">
-                                                    <rect key="frame" x="20" y="35.333333333333336" width="41" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4s-M4-7s0">
+                                                    <rect key="frame" x="20" y="36" width="41" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuA-XY-xqG" userLabel="emailField">
-                                                    <rect key="frame" x="96" y="36" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYd-4F-z3D" userLabel="emailField">
+                                                    <rect key="frame" x="78" y="36" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1a-uV-lIs">
-                                                    <rect key="frame" x="20" y="66.333333333333329" width="49" height="20.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpm-vc-QZ9">
+                                                    <rect key="frame" x="20" y="67" width="49" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ev8-vZ-2F8"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yB9-Gx-r0j" userLabel="phoneField">
-                                                    <rect key="frame" x="96" y="66" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hih-ps-01p" userLabel="phoneField">
+                                                    <rect key="frame" x="78" y="67" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nu7-fz-9b0">
-                                                    <rect key="frame" x="20" y="94" width="63" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAg-WC-1CC">
+                                                    <rect key="frame" x="20" y="98" width="63" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-WN-2Nl" userLabel="addressField">
-                                                    <rect key="frame" x="96" y="94" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PgC-eb-eKj" userLabel="addressField">
+                                                    <rect key="frame" x="96" y="98" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jMj-bi-SyX" firstAttribute="leading" secondItem="9nz-sF-12b" secondAttribute="trailing" constant="40" id="1a9-Lc-1LQ"/>
-                                                <constraint firstItem="t4S-t8-Ii0" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leadingMargin" id="5zk-Rf-R3Q"/>
-                                                <constraint firstItem="c1a-uV-lIs" firstAttribute="top" secondItem="t4S-t8-Ii0" secondAttribute="bottom" constant="10" id="7Sk-m7-ypb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8QG-9k-d1g" secondAttribute="trailing" constant="20" id="1gp-ma-vjX"/>
+                                                <constraint firstItem="hih-ps-01p" firstAttribute="top" secondItem="4pT-eh-by8" secondAttribute="top" constant="67" id="497-ZK-u4C"/>
+                                                <constraint firstItem="Jpm-vc-QZ9" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leading" constant="20" id="AXp-k1-URI"/>
                                                 <constraint firstItem="9nz-sF-12b" firstAttribute="top" secondItem="4pT-eh-by8" secondAttribute="top" constant="5" id="AaX-9a-7Eh"/>
-                                                <constraint firstItem="yB9-Gx-r0j" firstAttribute="leading" secondItem="c1a-uV-lIs" secondAttribute="trailing" constant="20" id="E4C-cW-iML"/>
-                                                <constraint firstItem="t4S-t8-Ii0" firstAttribute="top" secondItem="9nz-sF-12b" secondAttribute="bottom" constant="10" id="HK5-cW-PdW"/>
-                                                <constraint firstItem="ZuA-XY-xqG" firstAttribute="leading" secondItem="t4S-t8-Ii0" secondAttribute="trailing" constant="20" id="Rlh-om-74W"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yB9-Gx-r0j" secondAttribute="trailing" constant="20" id="UOR-Yy-9EX"/>
-                                                <constraint firstItem="nu7-fz-9b0" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leadingMargin" constant="20" id="YRq-E1-GP0"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ZuA-XY-xqG" secondAttribute="trailing" constant="20" id="bE0-vo-wQE"/>
-                                                <constraint firstItem="yB9-Gx-r0j" firstAttribute="top" secondItem="ZuA-XY-xqG" secondAttribute="bottom" constant="10" id="cgf-eN-oOb"/>
+                                                <constraint firstItem="PgC-eb-eKj" firstAttribute="leading" secondItem="wAg-WC-1CC" secondAttribute="trailing" constant="10" id="CRE-HX-Vnr"/>
+                                                <constraint firstItem="t4s-M4-7s0" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leading" constant="20" id="Cf7-Ml-qQg"/>
+                                                <constraint firstItem="HYd-4F-z3D" firstAttribute="leading" secondItem="t4s-M4-7s0" secondAttribute="trailing" constant="20" id="CjZ-ox-EOm"/>
+                                                <constraint firstItem="wAg-WC-1CC" firstAttribute="top" secondItem="Jpm-vc-QZ9" secondAttribute="bottom" constant="10" id="Cmh-2V-sCq"/>
+                                                <constraint firstItem="8QG-9k-d1g" firstAttribute="leading" secondItem="9nz-sF-12b" secondAttribute="trailing" constant="13" id="EOu-8V-QbW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PgC-eb-eKj" secondAttribute="bottom" constant="5" id="PDz-2w-qHK"/>
+                                                <constraint firstItem="hih-ps-01p" firstAttribute="top" secondItem="HYd-4F-z3D" secondAttribute="bottom" constant="10" id="Qyw-Hd-bXT"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wAg-WC-1CC" secondAttribute="bottom" constant="5" id="Tvj-Eo-jq2"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PgC-eb-eKj" secondAttribute="trailing" constant="20" id="VlR-jP-IdK"/>
+                                                <constraint firstItem="HYd-4F-z3D" firstAttribute="centerY" secondItem="t4s-M4-7s0" secondAttribute="centerY" id="a4p-od-zSq"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HYd-4F-z3D" secondAttribute="trailing" constant="20" id="aq3-sK-cqH"/>
+                                                <constraint firstItem="wAg-WC-1CC" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leading" constant="20" id="duM-Yu-4H1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hih-ps-01p" secondAttribute="trailing" constant="20" id="hZA-nD-XDD"/>
+                                                <constraint firstItem="8QG-9k-d1g" firstAttribute="top" secondItem="4pT-eh-by8" secondAttribute="top" constant="5" id="hhw-xf-XFO"/>
                                                 <constraint firstItem="9nz-sF-12b" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leading" constant="20" id="i3m-Bs-Agh"/>
-                                                <constraint firstItem="c1a-uV-lIs" firstAttribute="leading" secondItem="4pT-eh-by8" secondAttribute="leading" constant="20" id="nay-OA-whE"/>
-                                                <constraint firstItem="nu7-fz-9b0" firstAttribute="top" secondItem="t4S-t8-Ii0" secondAttribute="bottom" constant="10" id="nrH-tI-gdt"/>
-                                                <constraint firstItem="jMj-bi-SyX" firstAttribute="top" secondItem="4pT-eh-by8" secondAttribute="top" constant="5" id="uYf-fY-SI3"/>
-                                                <constraint firstItem="ZuA-XY-xqG" firstAttribute="top" secondItem="jMj-bi-SyX" secondAttribute="bottom" constant="10" id="xDh-xq-JJj"/>
-                                                <constraint firstAttribute="trailing" secondItem="jMj-bi-SyX" secondAttribute="trailing" constant="20" id="y5G-Gb-nC2"/>
+                                                <constraint firstItem="Jpm-vc-QZ9" firstAttribute="top" secondItem="t4s-M4-7s0" secondAttribute="bottom" constant="10" id="nGW-7G-uDl"/>
+                                                <constraint firstItem="PgC-eb-eKj" firstAttribute="top" secondItem="hih-ps-01p" secondAttribute="bottom" constant="10" id="oHL-rY-DOp"/>
+                                                <constraint firstItem="hih-ps-01p" firstAttribute="leading" secondItem="Jpm-vc-QZ9" secondAttribute="trailing" constant="9" id="skR-jj-FVJ"/>
+                                                <constraint firstItem="t4s-M4-7s0" firstAttribute="top" secondItem="9nz-sF-12b" secondAttribute="bottom" constant="10" id="uJU-jc-3Tw"/>
+                                                <constraint firstItem="HYd-4F-z3D" firstAttribute="top" secondItem="8QG-9k-d1g" secondAttribute="bottom" constant="10" id="xbY-sj-izk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="addressField" destination="HNk-WN-2Nl" id="uKE-mM-MZ6"/>
-                                            <outlet property="emailField" destination="ZuA-XY-xqG" id="FWd-IZ-hI8"/>
-                                            <outlet property="nameField" destination="jMj-bi-SyX" id="7Kb-bM-QxX"/>
-                                            <outlet property="phoneField" destination="HNk-WN-2Nl" id="CZM-tX-hOf"/>
+                                            <outlet property="addressField" destination="PgC-eb-eKj" id="KPa-tf-IdO"/>
+                                            <outlet property="emailField" destination="HYd-4F-z3D" id="uzZ-R5-JZX"/>
+                                            <outlet property="nameField" destination="8QG-9k-d1g" id="rUi-79-PNi"/>
+                                            <outlet property="phoneField" destination="hih-ps-01p" id="3Sg-h5-4Hq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PD9-D4-J4E" id="NCI-vg-8W9"/>
+                                    <outlet property="delegate" destination="PD9-D4-J4E" id="GWs-KY-6Vr"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oog-yM-e98"/>

@@ -31,26 +31,38 @@ class userDetails: UIViewController{
     ///```
     @IBAction func saveButton(_ sender: Any) {
         
-        
         let newUser = person(
-            name: nameTextField.text ?? "",
-            email: emailTextField.text ?? "",
-            phone: phoneTextField.text ?? "",
-            address: addressTextField.text ?? ""
-        )
-        
-        var savedUsers = loadSavedUsers()
-        savedUsers.append(newUser)
-        
-        if let data = try? JSONEncoder().encode(savedUsers) {
-            UserDefaults.standard.set(data, forKey: "savedUsers")
-        }
-        
-        // Optional: Clear text fields
-                nameTextField.text = ""
-                emailTextField.text = ""
-                phoneTextField.text = ""
-                addressTextField.text = ""
+                name: nameTextField.text ?? "",
+                email: emailTextField.text ?? "",
+                phone: phoneTextField.text ?? "",
+                address: addressTextField.text ?? ""
+            )
+            
+            var savedUsers = loadSavedUsers()
+            savedUsers.append(newUser)
+            
+            if let data = try? JSONEncoder().encode(savedUsers) {
+                UserDefaults.standard.set(data, forKey: "savedUsers")
+            }
+            
+            // Show pop-up with user details
+            let message = """
+            Name: \(newUser.name)
+            Email: \(newUser.email)
+            Phone: \(newUser.phone)
+            Address: \(newUser.address)
+            """
+            let alert = UIAlertController(title: "User Saved", message: message, preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                alert.dismiss(animated: true, completion: nil)
+            }
+            
+            // Optional: Clear text fields
+            nameTextField.text = ""
+            emailTextField.text = ""
+            phoneTextField.text = ""
+            addressTextField.text = ""
         
     }
     

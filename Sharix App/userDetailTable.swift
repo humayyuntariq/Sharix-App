@@ -15,6 +15,8 @@ class userDetailsTable: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         loadUsers()
     }
     
@@ -26,7 +28,7 @@ class userDetailsTable: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     // Load people from UserDefaults
        func loadUsers() {
-           if let data = UserDefaults.standard.data(forKey: "people"),
+           if let data = UserDefaults.standard.data(forKey: "savedUsers"),
               let decoded = try? JSONDecoder().decode([person].self, from: data) {
                self.users = decoded
            } else {
